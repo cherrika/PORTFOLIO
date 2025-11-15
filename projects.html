@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Projects - Cherrika</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="topnav"><ul><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<main class="wrap">
+<h1 class="page-title">Projects</h1>
+<section class="projects-grid">
+<article class="proj card">
+<h3>SketchPad — Mini Drawing App</h3>
+<p>Draw with mouse/touch and save your sketch. (Good to show sketching skills)</p>
+<div class="proj-demo">
+<canvas id="sketch" width="600" height="300"></canvas>
+<div class="proj-controls">
+<button onclick="clearCanvas()">Clear</button>
+<a id="saveLink" download="sketch.png">Save</a>
+</div>
+</div>
+</article>
+<article class="proj card">
+<h3>Novel Quotes — Quote Flipper</h3>
+<p>A tiny JS app that shows bookish quotes. Click Next to get a new quote.</p>
+<div class="proj-demo small">
+<p id="quote">“Reading is dreaming with open eyes.”</p>
+<button onclick="nextQuote()">Next</button>
+</div>
+</article>
+</section>
+</main>
+<footer class="foot"><p><a href="index.html">Back home</a></p></footer>
+<script src="script.js"></script>
+</body>
+</html>
